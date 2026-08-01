@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "capability_id": "dawn-jcode-executor",
+  "source_repository": "thetondj-gif/jcode",
+  "source_revision": "d6c7c36d61fb266c4e4ccfac0d7b710d3f50f444",
+  "status": "PREPARATION_READY",
+  "purpose": "Provide bounded repository inspection and patch proposals as an optional executor beneath DAWN.",
+  "integration_mode": "isolated-read-only-executor",
+  "read_write_classification": "read-allowlisted-repository-write-evidence-only",
+  "required_credentials": [],
+  "network_access": "disabled-for-first-canary",
+  "persistent_ports": [],
+  "risk_rating": "high",
+  "allowed_operations": [
+    "validate_executor_request",
+    "inspect_repository_fixture",
+    "explain_code",
+    "propose_patch_text",
+    "write_canary_evidence"
+  ],
+  "prohibited_operations": [
+    "replace_dawn_control_plane",
+    "shell_execution_in_first_canary",
+    "provider_credential_use_in_first_canary",
+    "repository_write",
+    "git_commit",
+    "git_push",
+    "pull_request_merge",
+    "canonical_memory_write",
+    "production_runtime_activation"
+  ],
+  "connected_to_dawn": false,
+  "production_verified": false
+}
