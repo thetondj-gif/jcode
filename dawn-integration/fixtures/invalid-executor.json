@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "authorised": false,
+  "control_plane": "jcode",
+  "repository_path": "relative/repository",
+  "repository_allowlisted": false,
+  "read_only": false,
+  "network_execution": true,
+  "provider_credentials": true,
+  "shell_execution": true,
+  "git_write": true,
+  "external_actions": true,
+  "operations": [
+    "run_shell",
+    "commit_changes",
+    "push_branch",
+    "merge_pull_request"
+  ],
+  "max_seconds": 3600,
+  "max_output_chars": 1000000,
+  "persist_session": true,
+  "write_memory": true
+}

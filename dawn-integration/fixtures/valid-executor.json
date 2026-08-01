@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "authorised": true,
+  "control_plane": "DAWN",
+  "repository_path": "/tmp/dawn-jcode-fixture/repository",
+  "repository_allowlisted": true,
+  "read_only": true,
+  "network_execution": false,
+  "provider_credentials": false,
+  "shell_execution": false,
+  "git_write": false,
+  "external_actions": false,
+  "operations": [
+    "inspect_repository",
+    "explain_code",
+    "propose_patch_text"
+  ],
+  "max_seconds": 30,
+  "max_output_chars": 20000,
+  "persist_session": false,
+  "write_memory": false
+}
